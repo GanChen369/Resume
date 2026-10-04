@@ -3,4 +3,12 @@
 #include "Resume.h"
 #include "Modules/ModuleManager.h"
 
-IMPLEMENT_PRIMARY_GAME_MODULE( FDefaultGameModuleImpl, Resume, "Resume" );
+class FResumeModule : public FDefaultGameModuleImpl
+{
+	virtual void StartupModule() override
+	{
+		UE_LOG(LogTemp, Display, TEXT("Resume module started"));
+	}
+};
+
+IMPLEMENT_PRIMARY_GAME_MODULE( FResumeModule, Resume, "Resume" );
