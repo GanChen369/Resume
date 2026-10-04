@@ -14,7 +14,14 @@
 				"-waitmutex"
 			],
 			"options": {
-				"cwd": "F:\\UE\\UnrealEngine"
+				"cwd": "F:\\UE\\UnrealEngine",
+				"shell": {
+					"executable": "cmd.exe",
+					"args": [
+						"/d",
+						"/c"
+					]
+				}
 			},
 			"group": {
 				"kind": "build",
@@ -36,7 +43,14 @@
 				"-waitmutex"
 			],
 			"options": {
-				"cwd": "F:\\UE\\UnrealEngine"
+				"cwd": "F:\\UE\\UnrealEngine",
+				"shell": {
+					"executable": "cmd.exe",
+					"args": [
+						"/d",
+						"/c"
+					]
+				}
 			},
 			"group": "build",
 			"problemMatcher": "$msCompile"
@@ -54,7 +68,14 @@
 				"-waitmutex"
 			],
 			"options": {
-				"cwd": "F:\\UE\\UnrealEngine"
+				"cwd": "F:\\UE\\UnrealEngine",
+				"shell": {
+					"executable": "cmd.exe",
+					"args": [
+						"/d",
+						"/c"
+					]
+				}
 			},
 			"group": "build",
 			"problemMatcher": "$msCompile"
@@ -68,7 +89,14 @@
 				"F:\\UE\\Project\\Resume\\Resume.uproject"
 			],
 			"options": {
-				"cwd": "F:\\UE\\UnrealEngine"
+				"cwd": "F:\\UE\\UnrealEngine",
+				"shell": {
+					"executable": "cmd.exe",
+					"args": [
+						"/d",
+						"/c"
+					]
+				}
 			},
 			"dependsOn": "ResumeEditor Win64 Development Build",
 			"problemMatcher": []
@@ -85,7 +113,14 @@
 				"-VSCode"
 			],
 			"options": {
-				"cwd": "F:\\UE\\UnrealEngine"
+				"cwd": "F:\\UE\\UnrealEngine",
+				"shell": {
+					"executable": "cmd.exe",
+					"args": [
+						"/d",
+						"/c"
+					]
+				}
 			},
 			"problemMatcher": []
 		}
