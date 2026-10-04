@@ -9,8 +9,17 @@ LocalBuilds/
 
 # Visual Studio / IDE
 .vs/
-.vscode/
 .idea/
+
+# VS Code - keep hand-written configs, ignore UBT-generated IntelliSense data
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+.vscode/compileCommands_*/
+*.code-workspace
+.ignore
 *.suo
 *.opensdf
 *.sdf

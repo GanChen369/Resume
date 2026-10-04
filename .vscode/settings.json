@@ -1,0 +1,18 @@
+{
+	"files.exclude": {
+		"**/Binaries/": true,
+		"**/DerivedDataCache/": true,
+		"**/Intermediate/": true,
+		"**/Saved/": true
+	},
+	"search.exclude": {
+		"**/Binaries/": true,
+		"**/DerivedDataCache/": true,
+		"**/Intermediate/": true,
+		"**/Saved/": true
+	},
+	"files.associations": {
+		"*.uproject": "json",
+		"*.uplugin": "json"
+	}
+}

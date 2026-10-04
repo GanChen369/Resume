@@ -1,0 +1,45 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch ResumeEditor (Debug)",
+			"type": "cppvsdbg",
+			"request": "launch",
+			"program": "F:\\UE\\UnrealEngine\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+			"args": [
+				"F:\\UE\\Project\\Resume\\Resume.uproject"
+			],
+			"cwd": "F:\\UE\\UnrealEngine",
+			"preLaunchTask": "ResumeEditor Win64 Development Build",
+			"console": "integratedTerminal",
+			"stopAtEntry": false,
+			"visualizerFile": "F:\\UE\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"symbolSearchPath": "F:\\UE\\Project\\Resume\\Binaries\\Win64;F:\\UE\\UnrealEngine\\Engine\\Binaries\\Win64"
+		},
+		{
+			"name": "Launch Standalone Game (Debug)",
+			"type": "cppvsdbg",
+			"request": "launch",
+			"program": "F:\\UE\\UnrealEngine\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+			"args": [
+				"F:\\UE\\Project\\Resume\\Resume.uproject",
+				"-game",
+				"-log"
+			],
+			"cwd": "F:\\UE\\UnrealEngine",
+			"preLaunchTask": "ResumeEditor Win64 Development Build",
+			"console": "integratedTerminal",
+			"stopAtEntry": false,
+			"visualizerFile": "F:\\UE\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"symbolSearchPath": "F:\\UE\\Project\\Resume\\Binaries\\Win64;F:\\UE\\UnrealEngine\\Engine\\Binaries\\Win64"
+		},
+		{
+			"name": "Attach to UnrealEditor",
+			"type": "cppvsdbg",
+			"request": "attach",
+			"processId": "${command:pickProcess}",
+			"visualizerFile": "F:\\UE\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"symbolSearchPath": "F:\\UE\\Project\\Resume\\Binaries\\Win64;F:\\UE\\UnrealEngine\\Engine\\Binaries\\Win64"
+		}
+	]
+}

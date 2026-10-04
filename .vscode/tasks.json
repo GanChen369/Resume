@@ -1,0 +1,93 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "ResumeEditor Win64 Development Build",
+			"detail": "Build the editor target (UnrealBuildTool)",
+			"type": "shell",
+			"command": "F:\\UE\\UnrealEngine\\Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ResumeEditor",
+				"Win64",
+				"Development",
+				"F:\\UE\\Project\\Resume\\Resume.uproject",
+				"-waitmutex"
+			],
+			"options": {
+				"cwd": "F:\\UE\\UnrealEngine"
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "ResumeEditor Win64 Development Rebuild",
+			"detail": "Clean rebuild of the editor target",
+			"type": "shell",
+			"command": "F:\\UE\\UnrealEngine\\Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"ResumeEditor",
+				"Win64",
+				"Development",
+				"F:\\UE\\Project\\Resume\\Resume.uproject",
+				"-clean",
+				"-waitmutex"
+			],
+			"options": {
+				"cwd": "F:\\UE\\UnrealEngine"
+			},
+			"group": "build",
+			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "Resume Win64 Development Build",
+			"detail": "Build the standalone game target",
+			"type": "shell",
+			"command": "F:\\UE\\UnrealEngine\\Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Resume",
+				"Win64",
+				"Development",
+				"F:\\UE\\Project\\Resume\\Resume.uproject",
+				"-waitmutex"
+			],
+			"options": {
+				"cwd": "F:\\UE\\UnrealEngine"
+			},
+			"group": "build",
+			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "Launch Editor (no debug)",
+			"detail": "Start the editor detached from the debugger",
+			"type": "shell",
+			"command": "F:\\UE\\UnrealEngine\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+			"args": [
+				"F:\\UE\\Project\\Resume\\Resume.uproject"
+			],
+			"options": {
+				"cwd": "F:\\UE\\UnrealEngine"
+			},
+			"dependsOn": "ResumeEditor Win64 Development Build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Generate VS Code project files",
+			"detail": "Regenerate c_cpp_properties.json and compileCommands_*.json via UnrealBuildTool",
+			"type": "shell",
+			"command": "F:\\UE\\UnrealEngine\\Engine\\Build\\BatchFiles\\GenerateProjectFiles.bat",
+			"args": [
+				"-project=F:\\UE\\Project\\Resume\\Resume.uproject",
+				"-game",
+				"-engine",
+				"-VSCode"
+			],
+			"options": {
+				"cwd": "F:\\UE\\UnrealEngine"
+			},
+			"problemMatcher": []
+		}
+	]
+}
